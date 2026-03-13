@@ -22,7 +22,7 @@ def bisection(f, a, b, epsilon):
     """
     a_i = a
     b_i = b
-    while(abs(a_i - b_i) > epsilon): # Until within epsilon tolerance
+    while(abs(a_i - b_i) > epsilon):    # Until within epsilon tolerance
         c_i = (a_i + b_i) / 2           # Half the interval
         if (f(c_i) * f(a_i) <= 0):
             b_i = c_i
