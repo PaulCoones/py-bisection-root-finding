@@ -3,14 +3,16 @@ which applies the bisection root finding method to a provided function."""
 
 def bisection(f, a, b, epsilon):
     """
-    Returns an approximation to the root of the provided function f up to an
-    error tolerance epsilon, given an initial interval [a, b] such that (f(a) * f(b)) <= 0.
+    Returns an approximation to the root of the provided function f,
+    given an initial interval [a, b] such that (f(a) * f(b)) <= 0 and
+    a tolerance epsilon on the size of the correction between successive
+    iterates
 
     Args:
         f (function): A function whose root is to be approximated
         a (float): The left end of the interval
         b (float): The right end of the interval
-        epsilon (float): The error tolerance in the approximation to the root
+        epsilon (float): The tolerance on the size of the correction
 
     Requires:
         b > a
